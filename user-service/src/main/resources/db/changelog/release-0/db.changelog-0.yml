@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: USERS-create.yml
+      relativeToChangeLogFile: true
+  - include:
+      file: USERS-insert.yml
+      relativeToChangeLogFile: true

@@ -1,0 +1,48 @@
+databaseChangeLog:
+  - changeSet:
+      id: PASTE-create
+      author: kuzheev-zt
+      changes:
+        - createTable:
+            tableName: PASTE
+            columns:
+              - column:
+                  name: ID
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: TITLE
+                  type: varchar2(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: TEXT
+                  type: varchar2(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: URL
+                  type: varchar2(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: EMAIL
+                  type: varchar2(255)
+              - column:
+                  name: ACCESS
+                  type: varchar2(31)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: LIFECYCLE
+                  type: varchar2(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: EXPIRED_TIME
+                  type: TIMESTAMP
+      rollback:
+        - dropTable:
+            tableName: PASTE

@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: PASTE-create.yml
+      relativeToChangeLogFile: true

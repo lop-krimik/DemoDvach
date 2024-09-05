@@ -1,0 +1,19 @@
+#spring:
+#  application:
+#    name: user-service
+#  datasource:
+#    url: ${DB_URL:jdbc:postgresql://postgres_db:5432/postgres_db}
+#    username: ${DB_USER:postgres}
+#    password: ${DB_PASSWORD:postgres}
+#    driver-class-name: org.postgresql.Driver
+#  jpa:
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        hbm2ddl:
+#          auto: update
+server:
+  port: 8082
+
+

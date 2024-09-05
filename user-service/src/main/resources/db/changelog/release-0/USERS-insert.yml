@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: USERS-insert
+      author: kuzheev-zt
+      changes:
+        - insert:
+            tableName: USERS
+            columns:
+              - column:
+                  name: USERNAME
+                  value: Julia
+              - column:
+                  name: PASSWORD
+                  value: SomePassword
+              - column:
+                  name: EMAIL
+                  value: Someemail@gmail.com

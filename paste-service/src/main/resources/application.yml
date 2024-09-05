@@ -1,0 +1,17 @@
+#spring:
+#  application:
+#    name: paste-service
+#  datasource:
+#    url: ${DB_URL:jdbc:postgresql://postgres_db:5432/postgres_db}
+#    username: ${DB_USER:postgres}
+#    password: ${DB_PASSWORD:postgres}
+#    driver-class-name: org.postgresql.Driver
+#  jpa:
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        hbm2ddl:
+#          auto: none
+server:
+  port: 8084

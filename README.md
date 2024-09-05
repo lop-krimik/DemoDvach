@@ -59,7 +59,7 @@ _{
 #### Returns user with certain user_id (id user exists)
 #### http://localhost:8082/api/v1/user/getUserById/{user_id}
 #### GET-method, body is not required
-### **4. Delete user:**
+### **5. Delete user:**
 #### Delete user with id = user_id
 #### http://localhost:8082/api/v1/user/deleteUserById/{user_id}
 #### DELETE-method, body is not required
